@@ -46,40 +46,12 @@ const units = reactive<
           toKelvin: convertFahrenheitToKelvin,
           fromKelvin: convertKelvinToFahrenheit,
         },
-        rankine: {
-          title: 'Rankine',
-          unit: '°R',
-          ref: 0,
-          toKelvin: convertRankineToKelvin,
-          fromKelvin: convertKelvinToRankine,
-        },
-        delisle: {
-          title: 'Delisle',
-          unit: '°De',
-          ref: 0,
-          toKelvin: convertDelisleToKelvin,
-          fromKelvin: convertKelvinToDelisle,
-        },
         newton: {
           title: 'Newton',
           unit: '°N',
           ref: 0,
           toKelvin: convertNewtonToKelvin,
           fromKelvin: convertKelvinToNewton,
-        },
-        reaumur: {
-          title: 'Réaumur',
-          unit: '°Ré',
-          ref: 0,
-          toKelvin: convertReaumurToKelvin,
-          fromKelvin: convertKelvinToReaumur,
-        },
-        romer: {
-          title: 'Rømer',
-          unit: '°Rø',
-          ref: 0,
-          toKelvin: convertRomerToKelvin,
-          fromKelvin: convertKelvinToRomer,
         },
       });
 

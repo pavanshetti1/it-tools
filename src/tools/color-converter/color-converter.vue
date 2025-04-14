@@ -31,21 +31,6 @@ const formats = {
     format: (v: Colord) => v.toHslString(),
     placeholder: 'e.g. hsl(0, 100%, 50%)',
   }),
-  hwb: buildColorFormat({
-    label: 'hwb',
-    format: (v: Colord) => v.toHwbString(),
-    placeholder: 'e.g. hwb(0, 0%, 0%)',
-  }),
-  lch: buildColorFormat({
-    label: 'lch',
-    format: (v: Colord) => v.toLchString(),
-    placeholder: 'e.g. lch(53.24, 104.55, 40.85)',
-  }),
-  cmyk: buildColorFormat({
-    label: 'cmyk',
-    format: (v: Colord) => v.toCmykString(),
-    placeholder: 'e.g. cmyk(0, 100%, 100%, 0)',
-  }),
   name: buildColorFormat({
     label: 'name',
     format: (v: Colord) => v.toName({ closest: true }) ?? 'Unknown',

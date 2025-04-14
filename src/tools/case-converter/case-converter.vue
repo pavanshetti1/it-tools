@@ -38,47 +38,8 @@ const formats = computed(() => [
     value: capitalCase(input.value, baseConfig),
   },
   {
-    label: 'Constantcase:',
-    value: constantCase(input.value, baseConfig),
-  },
-  {
-    label: 'Dotcase:',
-    value: dotCase(input.value, baseConfig),
-  },
-  {
     label: 'Headercase:',
     value: headerCase(input.value, baseConfig),
-  },
-  {
-    label: 'Nocase:',
-    value: noCase(input.value, baseConfig),
-  },
-  {
-    label: 'Paramcase:',
-    value: paramCase(input.value, baseConfig),
-  },
-  {
-    label: 'Pascalcase:',
-    value: pascalCase(input.value, baseConfig),
-  },
-  {
-    label: 'Pathcase:',
-    value: pathCase(input.value, baseConfig),
-  },
-  {
-    label: 'Sentencecase:',
-    value: sentenceCase(input.value, baseConfig),
-  },
-  {
-    label: 'Snakecase:',
-    value: snakeCase(input.value, baseConfig),
-  },
-  {
-    label: 'Mockingcase:',
-    value: input.value
-      .split('')
-      .map((char, index) => (index % 2 === 0 ? char.toUpperCase() : char.toLowerCase()))
-      .join(''),
   },
 ]);
 
