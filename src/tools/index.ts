@@ -11,16 +11,15 @@ import { tool as temperatureConverter } from './temperature-converter';
 import { tool as textStatistics } from './text-statistics';
 import { tool as tokenGenerator } from './token-generator';
 import type { ToolCategory } from './tools.types';
+import { tool as jsonDiff } from './json-diff';
+import { tool as chronoMeter } from './chronometer';
 import { tool as encryption } from './encryption';
+import { tool as stringObuscator } from './string-obfuscator';
 
 export const toolsByCategory: ToolCategory[] = [
   {
     name: 'Crypto',
-    components: [tokenGenerator, hashText, passwordStrengthAnalyser],
-  },
-  {
-    name: 'Encryption',
-    components: [encryption],
+    components: [tokenGenerator, hashText, passwordStrengthAnalyser, encryption],
   },
   {
     name: 'Converter',
@@ -33,6 +32,7 @@ export const toolsByCategory: ToolCategory[] = [
     name: 'Web',
     components: [
       httpStatusCodes,
+      jsonDiff,
     ],
   },
   {
@@ -48,12 +48,13 @@ export const toolsByCategory: ToolCategory[] = [
   },
   {
     name: 'Measurement',
-    components: [temperatureConverter],
+    components: [temperatureConverter, chronoMeter],
   },
   {
     name: 'Text',
     components: [
       textStatistics,
+      stringObuscator,
     ],
   },
 ];

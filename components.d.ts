@@ -90,6 +90,7 @@ declare module '@vue/runtime-core' {
     HttpStatusCodes: typeof import('./src/tools/http-status-codes/http-status-codes.vue')['default']
     IbanValidatorAndParser: typeof import('./src/tools/iban-validator-and-parser/iban-validator-and-parser.vue')['default']
     'IconMdi:brushVariant': typeof import('~icons/mdi/brush-variant')['default']
+    'IconMdi:contentCopy': typeof import('~icons/mdi/content-copy')['default']
     'IconMdi:kettleSteamOutline': typeof import('~icons/mdi/kettle-steam-outline')['default']
     IconMdiArrowDown: typeof import('~icons/mdi/arrow-down')['default']
     IconMdiCamera: typeof import('~icons/mdi/camera')['default']
